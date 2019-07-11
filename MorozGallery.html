@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+        <div class="bs-example">
+          <div class="page-header">
+            <a class="navbar-brand" href="#"></a>
+            <img id="move" src="logo2.png" height="150px" width="150px" class="img-thumbnail">
+   </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="AboutMe">About Me</a></li>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Makeup</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <style>
+    img {
+    height: 300px;
+    width: 300px;
+}
+
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  p.text {
+    text-align: center;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #white !important;
+  }
+  p.text {
+    text-align: center;
+  }
+
+
+
+  </style>
+
+  <title>Moroz Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="moroz.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <h3 class="abt">About Me</h3>
+
+    <h3>What Inspire's Me</h3>
+  </div>
+
+
+  <p class="text"><code>
+What inspires me
+
+I've always loved art as a kid, wether it was creating it myself or just looking at it, its played a huge role in who i am today.
+I am an artist and anything else doesnt't fit just feels wrong. I began doing portraiture as a teen after a long break from art when I was 17/18. It's been a rough journey but i've loved every step and i know my goals are not far out my reach.
+</code></p>
+<hr  />
+<!-- Images used to open the lightbox -->
+<div class="row">
+ <div class="column">
+   <img src="images/IMG_0887.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+ </div>
+ <div class="column">
+   <img src="images/IMG_0888.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+ </div>
+ <div class="column">
+   <img src="images/IMG_0889.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+ </div>
+ <div class="column">
+   <img src="images/IMG_0897.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+ </div>
+</div>
+
+<div class="row">
+ <div class="column">
+   <img src="images/IMG_0938.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+ </div>
+ <div class="column">
+   <img src="images/IMG_0939.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+ </div>
+ <div class="column">
+   <img src="images/IMG_0940.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+ </div>
+ <div class="column">
+   <img src="images/IMG_0966.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+ </div>
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+ <span class="close cursor" onclick="closeModal()">&times;</span>
+ <div class="modal-content">
+
+   <div class="mySlides">
+     <div class="numbertext">1 / 10</div>
+     <img src="images/IMG_0969.jpg" style="width:100%">
+   </div>
+
+   <div class="mySlides">
+     <div class="numbertext">2 / 10</div>
+     <img src="images/IMG_0970.jpg" style="width:100%">
+   </div>
+
+   <div class="mySlides">
+     <div class="numbertext">3 / 10</div>
+     <img src="images/IMG_0971.jpg" style="width:100%">
+   </div>
+
+   <div class="mySlides">
+     <div class="numbertext">4 / 10</div>
+     <img src="images/IMG_0973.jpg" style="width:100%">
+   </div>
+
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 10</div>
+        <img src="images/IMG_0975.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 10</div>
+        <img src="images/IMG_0976.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 10</div>
+        <img src="images/IMG_0977.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 10</div>
+        <img src="images/IMG_0978.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+         <div class="numbertext">9 / 10
+           <img src="images/images.jpg" style="width:100%" />
+         </div>
+      </div>
+
+      <div class="mySlides">10 / 10
+        <div class="numbertext">
+          <img src="images/makeup.jpg" style="width:100%"  />
+        </div>
+      </div>
+
+   <!-- Next/previous controls -->
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   <!-- Caption text -->
+   <div class="caption-container">
+     <p id="caption"></p>
+   </div>
+
+   <!-- Thumbnail image controls -->
+   <div class="column">
+     <img class="demo" src="images/IMG_0979.jpg" onclick="currentSlide(1)" alt="Nature">
+   </div>
+
+   <div class="column">
+     <img class="demo" src="images/IMG_1030.jpg" onclick="currentSlide(2)" alt="Snow">
+   </div>
+
+   <div class="column">
+     <img class="demo" src="images/IMG_1237.jpg" onclick="currentSlide(3)" alt="Mountains">
+   </div>
+
+   <div class="column">
+     <img class="demo" src="images/IMG_1253.jpg" onclick="currentSlide(4)" alt="Lights">
+   </div>
+ </div>
+</div>
+
+<hr  />
+    <h4>Leave a Comment:</h4>
+    <form role="form">
+      <div class="form-group">
+        <textarea class="form-control" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <br><br>
+
+    <p><span class="badge">2</span> Comments:</p><br>
+
+    <div class="row">
+      <div class="col-sm-2 text-center">
+        <img src="" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+        </div>
+          <div class="col-sm-2 text-center">
+            <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+            <div class="col-sm-10">
+              <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+              <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <br>
+              <p><span class="badge">1</span> Comment:</p><br>
+              <div class="row">
+                <div class="col-sm-2 text-center">
+                  <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+                  <div class="col-xs-10">
+                    <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+                    <p>Me too! WOW!</p>
+                    <br>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <footer class="container-fluid bg-4 text-center">
+      <p>Instagram <a href="https://www.instagram.com/"></a></p>
+    </footer>
+<script src="moroz.js" alt="javascript"></script>
+</body>
+
+</html>
